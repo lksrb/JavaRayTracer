@@ -4,6 +4,6 @@ module com.example.javaraytracer {
 
     requires com.dlsc.formsfx;
 
-    opens com.example.javaraytracer to javafx.fxml;
-    exports com.example.javaraytracer;
+    opens Core to javafx.fxml;
+    exports Core;
 }
