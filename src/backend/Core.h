@@ -14,6 +14,7 @@ using u32 = uint32_t;
 using f32 = float;
 
 // --- Preprocessors ----
+#define RT_TEST 0
 #define RT_ASSERT(cond, ...) do { if(!(cond)) { std::cerr << std::format(__VA_ARGS__) << "\n"; throw std::exception("ASSERT"); } } while(0)
 #define RT_LOG(...) std::cout << std::format(__VA_ARGS__) << "\n"
 

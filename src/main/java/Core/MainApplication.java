@@ -2,14 +2,7 @@ package Core;
 
 import javafx.animation.AnimationTimer;
 import javafx.application.Application;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
-import javafx.concurrent.Task;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-
-import java.io.IOException;
 
 public class MainApplication extends Application {
 
@@ -30,7 +23,7 @@ public class MainApplication extends Application {
     private long m_LastFrameTime = 0;
 
     @Override
-    public void start(Stage stage) throws IOException
+    public void start(Stage stage)
     {
         m_Window = stage;
 

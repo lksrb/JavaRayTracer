@@ -272,6 +272,7 @@ public class MaterialEditorPanel {
         });
 
         m_MetallicSlider = new Slider(0.0, 1.0, 0.0);
+        m_MetallicSlider.setDisable(false); // Specular lighting is not available
         m_MetallicSlider.valueProperty().addListener((observable, oldValue, newValue) -> {
             if(m_SelectedMaterial == null || m_SelectionChanged)
                 return;

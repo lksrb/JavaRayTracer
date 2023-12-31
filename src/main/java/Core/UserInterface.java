@@ -1,7 +1,6 @@
 package Core;
 
 import javafx.scene.Scene;
-import javafx.scene.control.*;
 import javafx.scene.image.*;
 import javafx.scene.layout.*;
 
@@ -14,7 +13,7 @@ public class UserInterface {
     private BorderPane m_Pane;
     private Image m_CurrentImage;
 
-    private int m_SceneWidth = 0, m_SceneHeight = 0;
+    private int m_SceneWidth, m_SceneHeight;
 
     private SceneEditorPanel m_SceneEditorPanel;
     private MaterialEditorPanel m_MaterialEditorPanel;

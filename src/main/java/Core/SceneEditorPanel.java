@@ -194,9 +194,7 @@ public class SceneEditorPanel {
             m_SceneObjectListView.refresh();
         });
 
-        m_SceneObjectListView.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
-            m_EmptySpaceContextMenu.hide();
-        });
+        m_SceneObjectListView.addEventHandler(MouseEvent.MOUSE_CLICKED, event -> m_EmptySpaceContextMenu.hide());
     }
 
     private void CreatePropertiesPanel()
