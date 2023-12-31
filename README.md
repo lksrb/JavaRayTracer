@@ -12,7 +12,7 @@ Platform: Windows
 - Roughness/Reflection rendering
 
 ## Getting started
-Currently only available to build and run using IntelliJ IDEA solution.
+Currently only available to build and run using IntelliJ IDEA and Visual Studio 2022.
 
 <ins>**1. Downloading the repository**</ins>
 
