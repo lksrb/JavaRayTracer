@@ -7,8 +7,8 @@ Language: Java 20, C++ 20
 Platform: Windows
 
 ### Features
-- Add, edit or remove spheres
-- Add, edit or remove materials
+- Add, edit or remove spheres and materials
+- Diffuse lighting, reflection and emission 
 
 ## Getting started
 Currently only available to build and run using IntelliJ IDEA and Visual Studio 2022.
