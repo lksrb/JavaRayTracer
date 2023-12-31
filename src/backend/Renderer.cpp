@@ -3,8 +3,8 @@
 #include "Scene.h"
 
 Renderer::Renderer() : m_MainCamera(45.0f, 0.1f, 100.0f)
-{   /*
-	// Materials
+{   
+  /* // Materials
 	Material& pinkMaterial = m_Scene.Materials.emplace_back();
 	pinkMaterial.Albedo = { 1.0f, 0.0f, 1.0f };
 	pinkMaterial.Roughness = 0.0f;
@@ -85,7 +85,6 @@ void Renderer::OnUpdate(f32 ts)
 		ResetAccumulation();
 	}
 }
-#define TESTT 0
 
 void Renderer::OnRender(u32* renderImage)
 {
@@ -97,7 +96,7 @@ void Renderer::OnRender(u32* renderImage)
 		{
 			std::for_each(std::execution::par, m_ImageHorizontalIter.begin(), m_ImageHorizontalIter.end(), [this, renderImage, y](u32 x)
 				{
-#if !TESTT
+#if !RT_TEST
 					glm::vec4 color = PerPixel(x, y);
 					m_AccumulationData[x + y * m_ViewportWidth] += color;
 
@@ -122,7 +121,7 @@ void Renderer::OnRender(u32* renderImage)
 
 glm::vec4 Renderer::PerPixel(u32 x, u32 y)
 {
-#if !TESTT
+#if !RT_TEST
 	Ray ray;
 	ray.Origin = m_MainCamera.GetPosition();
 	ray.Direction = m_MainCamera.GetRayDirections()[x + y * m_ViewportWidth];
@@ -140,6 +139,8 @@ glm::vec4 Renderer::PerPixel(u32 x, u32 y)
 		seed += i;
 
 		HitPayload payload = TraceRay(ray);
+
+		// If we did not hit anything, sky color influences the light
 		if (payload.HitDistance < 0.0f)
 		{
 			glm::vec3 skyColor = glm::vec3(0.6f, 0.7f, 0.9f);
@@ -160,7 +161,6 @@ glm::vec4 Renderer::PerPixel(u32 x, u32 y)
 	}
 
 	return glm::vec4(light, 1.0f);
-
 #else
 	glm::vec3 rayOrigin(0.0f, 0.0f, 2.0f);
 
