@@ -7,9 +7,9 @@ Language: Java 20, C++ 20
 Platform: Windows
 
 ### Features
-- Add/Edit/Remove spheres
-- Add/Editor/Remove materials
-- Roughness/Reflection rendering
+- Add, edit or remove spheres
+- Add, edit or remove materials
+- Roughness and reflection available
 
 ## Getting started
 Currently only available to build and run using IntelliJ IDEA and Visual Studio 2022.
