@@ -38,6 +38,18 @@ If you want to move the camera into different directions, you can use:
 
 Happy pathtracing!
 
+<ins>**3. Usage**</ins>
+
+You can explore whole scene using an interactive camera. When you want to rotate the camera hold right mouse button and drag to desired location. 
+
+If you want to move the camera into different directions, you can use:
+- W - Forward
+- S - Backward
+- A - Left
+- D - Right
+- Q - Down
+- E - Up
+
 ## Showcase
 Emission material:
 ![Emission material](https://raw.githubusercontent.com/lksrb/RayTracing/master/res/raytraced.png)
