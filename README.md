@@ -21,13 +21,13 @@ Start by cloning this repository using `git clone https://www.github.com/lksrb/J
 
 Open this repository using IntelliJ IDEA. Then navigate to `src/backend`, open VS solution `backend.sln` and build `Release`.
 
-This will generate a DLL module which java frondend already know about.
+This will compile the solution and generate DLL module for Java frontend.
 
 <ins>**3. Usage**</ins>
 
-You can explore whole scene using an interactive camera. When you want to rotate the camera hold right mouse button and drag to desired location. 
+You can explore whole scene using an interactive camera. When you want to rotate the camera, hold right mouse button and drag to desired direction. 
 
-If you want to move the camera into different directions, you can use:
+If you want to move the camera, you can use:
 - W - Forward
 - S - Backward
 - A - Left
@@ -37,18 +37,6 @@ If you want to move the camera into different directions, you can use:
 
 
 Happy pathtracing!
-
-<ins>**3. Usage**</ins>
-
-You can explore whole scene using an interactive camera. When you want to rotate the camera hold right mouse button and drag to desired location. 
-
-If you want to move the camera into different directions, you can use:
-- W - Forward
-- S - Backward
-- A - Left
-- D - Right
-- Q - Down
-- E - Up
 
 ## Showcase
 Emission material:
