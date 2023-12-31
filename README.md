@@ -9,7 +9,6 @@ Platform: Windows
 ### Features
 - Add, edit or remove spheres
 - Add, edit or remove materials
-- Roughness and reflection available
 
 ## Getting started
 Currently only available to build and run using IntelliJ IDEA and Visual Studio 2022.
